@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Vishnu Ramachandran</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">vishnu@portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="reveal" style="--d:40ms">06 • contact</p>
+          <h3 class="reveal" style="--d:80ms">Let’s Connect</h3>
+        </div>
+        <div class="contact-box reveal" style="--d:120ms">
+          <p>Looking for a dedicated cybersecurity enthusiast? I'm interested in SOC, Blue Team, and security analyst opportunities. Let's connect and build secure solutions together.</p>
+          <div class="contact-links stagger">
+            <a class="reveal" style="--d:160ms" href="mailto:r.vishnu2004@gmail.com">Email</a>
+            <a class="reveal" style="--d:200ms" href="tel:+919446444021">Phone</a>
+            <a class="reveal" style="--d:240ms" href="https://www.linkedin.com/in/vishnuramachandran-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="reveal" style="--d:280ms" href="https://github.com/Vishnu2004" target="_blank" rel="noopener noreferrer">Github</a>
+            <a class="reveal" style="--d:320ms" href="https://tryhackme.com/p/r.vishnu2004" target="_blank" rel="noopener noreferrer">TryHackMe</a>
+          </div>
+        </div>
+    
+    <script>
+      document.documentElement.classList.add('animate');
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.stagger').forEach(function(parent){
+          parent.querySelectorAll('.reveal').forEach(function(el, idx){
+            var base = parseInt(getComputedStyle(el).getPropertyValue('--d')) || 0;
+            el.style.setProperty('--d', (base + idx*60) + 'ms');
+          });
+        });
+      });
+    </script>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishnu Ramachandran | Cybersecurity Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Vishnu Ramachandran, a cybersecurity and SOC-focused learner"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">vishnu@portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Open to entry-level SOC and cybersecurity opportunities</p>
+          <h1>Vishnu Ramachandran</h1>
+          <h2>Blue-Team Security Learner • SOC Focus • Threat Detection &amp; Incident Response</h2>
+          <p>
+            I am a Computer Engineering graduate developing hands-on expertise in security monitoring,
+            log analysis, SIEM workflows, alert triage, and incident response. I am focused on
+            turning security telemetry into clear, actionable signals through disciplined analysis.
+          </p>
+          <div class="hero-actions reveal stagger">
+            <a class="btn btn-primary reveal" style="--d:120ms" href="projects.html">Explore Projects</a>
+            <a class="btn btn-secondary reveal" style="--d:220ms" href="resume.html">View Resume</a>
+          </div>
+          <ul class="highlights reveal" style="--d:320ms">
+            <li>Thrissur, Kerala, India</li>
+            <li>CSA • CICSA Certified</li>
+          </ul>
+        </div>
+        <!-- terminal card removed as requested -->
+      </section>
+
+      <!-- About now on a separate page: about.html -->
+
+      <!-- Journey now on a separate page: journey.html -->
+
+      <!-- Skills now on a separate page: skills.html -->
+
+      <!-- Projects (labs) and Contact removed to keep homepage minimal; use nav to access pages -->
+    
+    <script>
+      // Trigger reveal animations on page load
+      document.documentElement.classList.add('animate');
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.stagger').forEach(function(group){
+          group.querySelectorAll('.reveal').forEach(function(el, idx){
+            var base = parseInt(getComputedStyle(el).getPropertyValue('--d')) || 0;
+            el.style.setProperty('--d', (base + idx*60) + 'ms');
+          });
+        });
+      });
+    </script>
+    </main>
+  </body>
+</html>

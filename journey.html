@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey | Vishnu Ramachandran</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">vishnu@portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="reveal" style="--d:40ms">02 • journey</p>
+          <h3 class="reveal" style="--d:80ms">My Learning Journey</h3>
+        </div>
+
+        <!-- Experience moved to experience.html -->
+        <div class="card-grid timeline-grid">
+          <article class="card reveal" style="--d:140ms">
+            <h4>Diploma in Computer Engineering</h4>
+            <span>2022 — 2025</span>
+            <p style="margin:0.35rem 0 0; color:var(--muted);">St. Mary's Institute of Technology and Science<br>Palakkad, Kerala, India</p>
+            <p>Developed a strong academic base in networking, operating systems, computing fundamentals, and technical problem solving.</p>
+          </article>
+          <article class="card reveal" style="--d:180ms">
+            <h4>Certified IT Infrastructure and Cyber SOC Analyst</h4>
+            <span>2025-2026</span>
+            <p>Focused on SIEM workflows, alert triage, log review, and the incident response lifecycle.</p>
+          </article>
+        
+        </div>
+
+    <script>
+      document.documentElement.classList.add('animate');
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.reveal').forEach(function(el, idx){
+          var base = parseInt(getComputedStyle(el).getPropertyValue('--d')) || 0;
+          el.style.setProperty('--d', (base + idx*40) + 'ms');
+        });
+      });
+    </script>
+      </section>
+    </main>
+  </body>
+</html>

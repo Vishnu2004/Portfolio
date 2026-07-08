@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Vishnu Ramachandran</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">vishnu@portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="reveal" style="--d:40ms">04 • projects</p>
+          <h3 class="reveal" style="--d:80ms">Security Projects &amp; Practice</h3>
+        </div>
+        <div class="project-list">
+          <article class="project-card reveal" style="--d:140ms">
+            <h4>Wazuh SIEM Setup &amp; Security Monitoring</h4>
+            <p>Configured centralized log collection and monitoring for integrated endpoints with alerting and visibility.</p>
+          </article>
+          <article class="project-card reveal" style="--d:180ms">
+            <h4>Splunk Enterprise Setup &amp; Log Monitoring</h4>
+            <p>Built dashboards, alerts, and log review workflows for operational visibility and basic threat detection.</p>
+          </article>
+          <article class="project-card reveal" style="--d:220ms">
+            <h4>Web Application Security Testing</h4>
+            <p>Explored common web vulnerabilities including XSS, SQL Injection, and CSRF in controlled lab environments.</p>
+          </article>
+          <article class="project-card reveal" style="--d:260ms">
+            <h4>Threat Awareness &amp; Detection Practice</h4>
+            <p>Practiced investigation workflows and defensive thinking through labs, case studies, and monitoring exercises.</p>
+          </article>
+        </div>
+    
+    <script>
+      document.documentElement.classList.add('animate');
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.reveal').forEach(function(el, idx){
+          var base = parseInt(getComputedStyle(el).getPropertyValue('--d')) || 0;
+          el.style.setProperty('--d', (base + idx*40) + 'ms');
+        });
+      });
+    </script>
+      </section>
+    </main>
+  </body>
+</html>

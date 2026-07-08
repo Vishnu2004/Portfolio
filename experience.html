@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | Vishnu Ramachandran</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">vishnu@portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="reveal" style="--d:40ms">03 • experience</p>
+          <h3 class="reveal" style="--d:80ms">Work Experience</h3>
+        </div>
+
+        <div class="card-grid">
+          <article class="card reveal" style="--d:140ms">
+            <h4>Avenorr Infotech Pvt. Ltd</h4>
+            <span style="color:var(--accent); display:block; margin:0.25rem 0">Cybersecurity Analyst Trainee — Joined on June 15 2026</span>
+            <p style="margin-top:0.6rem">Currently undergoing a Cybersecurity Trainee program focused on cybersecurity, networking, and IT operations. Actively gaining hands-on experience in system and network monitoring, technical documentation, and practical security tasks while collaborating on internal projects. Continuously developing technical, analytical, and problem-solving skills through mentorship and real-world learning experiences. (Currently working as Trainee)</p>
+          </article>
+        </div>
+
+    <script>
+      document.documentElement.classList.add('animate');
+      document.addEventListener('DOMContentLoaded', function(){
+        document.querySelectorAll('.reveal').forEach(function(el, idx){
+          var base = parseInt(getComputedStyle(el).getPropertyValue('--d')) || 0;
+          el.style.setProperty('--d', (base + idx*40) + 'ms');
+        });
+      });
+    </script>
+      </section>
+    </main>
+  </body>
+</html>
